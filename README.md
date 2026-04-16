@@ -94,18 +94,6 @@ The original processed dataset (`final_featured_data.csv`) was larger than GitHu
 
 The sample dataset preserves the same structure and features as the original dataset, allowing recruiters and reviewers to understand the project workflow without downloading very large files.
 
-## Folder Structure
-
-```text
-Retail_Inventory_Analytics/
-├── data/
-├── models/
-├── notebooks/
-├── powerbi_dashboard/
-├── python/
-├── reports/
-├── screenshots/
-└── sql/
 
 ## Results & Insights
 
@@ -162,3 +150,90 @@ Pipeline Flow:
 
 ```text
 Raw CSV → Schema Validation → Data Quality Checks → Staging Tables → Fact/Dimension Tables → Incremental Load → Warehouse Export
+
+##Folder structure
+
+Retail_Inventory_Analytics/
+│
+├── data/
+│   ├── raw/
+│   ├── cleaned/
+│   ├── processed/
+│   ├── staging/
+│   └── warehouse/
+│
+├── python/
+│   ├── data_cleaning.py
+│   ├── merge_data.py
+│   ├── feature_engineering.py
+│   ├── demand_forecasting.py
+│   ├── stockout_prediction.py
+│   ├── reorder_recommendation.py
+│   ├── load_staging_tables.py
+│   ├── data_quality_checks.py
+│   ├── schema_validation.py
+│   ├── export_warehouse_data.py
+│   └── create_sample_data.py
+│
+├── pipelines/
+│   ├── extract_data.py
+│   ├── transform_data.py
+│   ├── load_data.py
+│   ├── run_pipeline.py
+│   └── run_etl_pipeline.py
+│
+├── sql/
+│   ├── business_queries.sql
+│   ├── forecasting_queries.sql
+│   ├── inventory_kpis.sql
+│   ├── insert_data.sql
+│   ├── schema.sql
+│   ├── staging/
+│   │   └── create_staging_tables.sql
+│   └── warehouse/
+│       ├── create_warehouse_tables.sql
+│       ├── load_fact_dimension_tables.sql
+│       └── incremental_load.sql
+│
+├── notebooks/
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_eda.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   ├── 04_forecasting_model.ipynb
+│   └── 05_inventory_optimization.ipynb
+│
+├── reports/
+│   ├── business_problem.md
+│   ├── project_overview.md
+│   ├── final_recommendations.md
+│   └── etl_architecture.md
+│
+├── docs/
+│   └── data_pipeline_flow.md
+│
+├── powerbi_dashboard/
+│   └── Retail_Inventory_Dashboard.pbix
+│
+├── screenshots/
+│   ├── dashboard.png
+│   ├── sql_queries.png
+│   ├── forecasting_model_output.png
+│   └── stockout_model_output.png
+│
+├── logs/
+│   └── pipeline.log
+│
+├── archive/
+│   ├── processed/
+│   └── logs/
+│
+├── models/
+│   ├── stockout_classifier.pkl
+│   └── demand_forecast_model_sample.pkl
+│
+├── .env
+├── .gitignore
+├── config.py
+├── requirements.txt
+├── README.md
+└── run_pipeline.bat
