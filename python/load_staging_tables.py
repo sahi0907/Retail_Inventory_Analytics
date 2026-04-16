@@ -1,8 +1,8 @@
 import pandas as pd
-from sqlalchemy import create_engine
+from config import *
 
 engine = create_engine(
-    "postgresql+psycopg2://postgres:Root@localhost:5432/retail_inventory_db"
+    f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 )
 
 sales_df = pd.read_csv("data/cleaned/sales_cleaned.csv")

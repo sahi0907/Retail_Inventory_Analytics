@@ -10,3 +10,11 @@
 2026-04-16 10:54:36,929 - INFO - Success: python python/data_quality_checks.py
 2026-04-16 10:54:36,930 - INFO - Running: python python/load_staging_tables.py
 2026-04-16 10:56:05,184 - INFO - Success: python python/load_staging_tables.py
+2026-04-16 15:10:08,080 - INFO - Running: python python/data_quality_checks.py
+2026-04-16 15:10:13,296 - INFO - Missing Store IDs: 0
+2026-04-16 15:10:13,296 - INFO - Negative Sales Rows: 0
+2026-04-16 15:10:13,296 - INFO - Duplicate Rows: 0
+2026-04-16 15:10:13,297 - INFO - Data quality passed
+2026-04-16 15:10:16,044 - INFO - Success: python python/data_quality_checks.py
+2026-04-16 15:10:16,044 - INFO - Running: python python/load_staging_tables.py
+2026-04-16 15:12:00,477 - INFO - Success: python python/load_staging_tables.py

@@ -143,3 +143,22 @@ python/reorder_recommendation.py
 ```text
 powerbi_dashboard/Retail_Inventory_Dashboard.pbix
 
+
+## Data Engineering Enhancements
+
+This project was extended with data engineering concepts to simulate a real-world ETL pipeline.
+
+Implemented features:
+- Staging tables in PostgreSQL
+- Fact and Dimension warehouse tables
+- Incremental loading
+- Schema validation
+- Data quality checks
+- Logging
+- Automated ETL runner
+- Warehouse export generation
+
+Pipeline Flow:
+
+```text
+Raw CSV → Schema Validation → Data Quality Checks → Staging Tables → Fact/Dimension Tables → Incremental Load → Warehouse Export
